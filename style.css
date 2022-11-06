@@ -98,20 +98,43 @@ button {
 
 /* Project */
 #project {
-    height: 75vh;
+    height: 100vh;
+    gap: 80px;
+}
+
+.p-container {
+    width: 992px;
+    height: 524px;
+    border: 1.5px solid var(--border-);
+    border-radius: 8px;
+    gap: 30px;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.p-container img {
+    max-width: 500px;
+    max-height: 500px;
+    flex: 1;
+}
+
+.p-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 /* Contact */
 #contacts {
-    height: 75vh;
-    background-color: var(--bg2-);
+    display: block;
+    height: 100vh;
+    /* background-color: var(--bg2-); */
 }
 
 li {
     list-style: none;
 }
 
-li a {
+li a, button a {
     text-decoration: none;
     color: var(--blanco-);
     
@@ -139,4 +162,27 @@ li a {
     transform: translateY(8px);
 }
 
+/* footer */
+footer {
+    padding: 16px;
+    border-top: 0.5px solid var(--border-);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+footer ul {
+    gap: 20px;
+}
+
+@media only screen and (max-width:576px){
+    .p-container {
+        width: auto;
+        height: auto;
+        border: 1.5px solid var(--border-);
+        border-radius: 8px;
+        gap: 30px;
+        padding: 20px;
+        flex-direction: column !important;
+    }
+}
