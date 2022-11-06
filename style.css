@@ -1,13 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Nunito:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,700&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root {
-    --bg-1:#F9FAFF;
-    --bg-2:#FFFFFF;
-    --primary:#FDC435;
-    --fontLine:#25282B;
+    --bg1-:#171718;
+    --bg2-:#1C1E22;
+    --blanco-:#FFFFFF;
+    --border-:#26292D;
+    --primary-:#5C62EC;
+    --hover-:#3C40AE;
+    --acento-:#85BFD1;
+    --gris:#A0A0A1;
 }
 
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'DM Sans',sans-serif;
 }
+
+body {
+    margin: 0;
+    background-color: var(--bg1-) !important;
+    color: var(--blanco-) !important;
+}
+
+/* dashboard */
+#dashboard {
+    height: 100vh;
+    background-color: var(--bg1-);
+    color: var(--blanco-);
+    gap: 32px;
+    text-align: center;
+}
+
+#dashboard h1 {
+    font-weight: 700;
+    font-size: 5em;
+}
+
+#dashboard p {
+    font-size: 20px;
+}
+
+.name {
+    color: var(--primary-);
+}
+
+button {
+    padding: 16px 20px;
+    border-radius: 8px !important;
+    text-align: center;
+    width: 169px;
+    color: var(--blanco-);
+    background-color: var(--bg2-);
+}
+
+.dash-btn {
+    display: flex;
+    gap: 16px;
+}
+
+.dash-btn button:first-of-type {
+    background-color: #5C62EC;
+    border: none;
+}
+
+.dash-btn button:last-of-type {
+    border: 1px solid var(--blanco-);
+}
+
+/* About */
+#about {
+    height: 100vh;
+}
+.container {
+    border-radius: 8px;
+    padding: 24px;
+    border: 1.5px solid var(--border-);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.about-text p {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.container img {
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-text button {
+    align-self: flex-start;
+    border: 1px solid var(--blanco-);
+    border-radius: 5px;
+}
+
+/* Project */
+#project {
+    height: 75vh;
+}
+
+/* Contact */
+#contacts {
+    height: 75vh;
+    background-color: var(--bg2-);
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--blanco-);
+    
+}
+
+#contacts p {
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    font-style: italic;
+}
+
+#contacts ul {
+    font-size: 30px;
+    gap: 40px;
+}
+
+#profile-link {
+    display: inline-block;
+    transition: 0.3s ease-out;
+}
+
+#profile-link:hover {
+    transform: translateY(8px);
+}
+
+

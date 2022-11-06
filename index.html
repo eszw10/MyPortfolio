@@ -10,36 +10,57 @@
     <title>Erycson's Portfolio Website</title>
 </head>
 <body>
-    <nav>
-        <img src="./images/my-logo.svg" alt="erycson-logo">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="p-2 navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="./images/my-logo.png" alt="my-logo" width="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </div>
+        </div>
     </nav>
     <main>
-        <section id="dashboard">
-            <div class="dash-text">
-                <p>---HELLO</p>
-                <h1>Hello</h1>
-                <p></p>
-                <div class="dash-btn">
-                    <button>Projects</button>
-                    <button>linkedIn</button>
-                </div>
+        <section id="dashboard" class="d-flex flex-column align-items-center justify-content-center">
+            <h1>I'm <span class="name">Erycson.</span></h1>
+            <h1>Front-End Developer</h1>
+            <p>This is My Portfolio Website!</p>
+            <div class="dash-btn">
+                <button>Projects</button>
+                <button>linkedIn</button>
             </div>
-            <img src="" alt="">
         </section>
         <section id="about">
-            <div class="about-text">
-                <h1>Hello</h1>
-                <p></p>
-                <button></button>
+            <div class="container d-flex justify-content-center align-items-center px-3">
+                <img src="./images/my-profile.png" alt="">
+                <div class="about-text d-flex flex-column justify-content-center">
+                    <h2>About Me</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, cupiditate magnam amet aperiam blanditiis quasi neque sed adipisci laboriosam possimus sequi ipsa ullam dignissimos exercitationem molestiae numquam obcaecati autem quod?</p>
+                    <button>Contact Me</button>
+                </div>
             </div>
-            <img src="" alt="">
         </section>
-        <section id="project">
+        <section id="project" class="d-flex flex-column align-items-center">
             <h1>Projects</h1>
             <div class="p-container">
                 <div class="left-p">
@@ -66,10 +87,10 @@
                 <img src="" alt="">
             </div>
         </section>
-        <section id="contact">
+        <section id="contacts" class="d-flex flex-column justify-content-center align-items-center" >
             <h1>Let's Work Together..</h1>
             <p>How do you take your coffee?</p>
-            <ul>
+            <ul class="d-flex">
                 <li><a href="https://web.facebook.com/avery.fold" id="profile-link" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
                 <li><a href="https://github.com/eszw10" id="profile-link" target="_blank"><i class="fab fa-github"></i> Github</a></li>
                 <li><a href="mailto:erycszw10@gmail.com" id="profile-link" target="_blank"><i class="fas fa-at"></i> Send a mail</a></li>
