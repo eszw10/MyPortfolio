@@ -11,7 +11,7 @@
     <title>Erycson's Portfolio Website</title>
 </head>
 <body>
-    <nav id="nav" class="p-2 navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+    <nav id="nav" class="p-2 navbar navbar-dark navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="#">
             <img src="./images/my-logo.png" alt="my-logo" width="70">
         </a>
@@ -26,29 +26,29 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link active hover-underline-animation" aria-current="page" href="#">Home</a>
+                    <a id="home" class="nav-link hover-underline-animation" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hover-underline-animation" href="#about">About</a>
+                  <a id="a-about" class="nav-link hover-underline-animation" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link hover-underline-animation" href="#project">Projects</a>
+                    <a id="a-project" class="nav-link hover-underline-animation" href="#project">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link hover-underline-animation" href="#contacts">Contacts</a>
+                    <a id="a-contacts" class="nav-link hover-underline-animation" href="#contacts">Contacts</a>
                 </li>
               </ul>
             </div>
         </div>
     </nav>
-    <main>
+    <main data-spy="scroll" data-target="nav" data-offset="0">
         <section id="dashboard" class="d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
             <h1>I'm <span class="name">Erycson.</span></h1>
             <h1>Front-End Developer</h1>
             <p>This is My Portfolio Website!</p>
             <div class="dash-btn">
-                <a class="btn" href="#project">Projects</a>
-                <a class="btn btn-1" href="#contacts">Contact Me</a>
+                <a class="btn-1" href="#project">Projects</a>
+                <a class="btn" href="#contacts">Contact Me</a>
             </div>
         </section>
         <section id="about">
@@ -57,7 +57,7 @@
                 <div class="about-text d-flex flex-column justify-content-center">
                     <h2>About Me</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, cupiditate magnam amet aperiam blanditiis quasi neque sed adipisci laboriosam possimus sequi ipsa ullam dignissimos exercitationem molestiae numquam obcaecati autem quod?</p>
-                    <a class="btn btn-1" href="#contacts">Contact Me</a>
+                    <a class="btn" href="#contacts">Contact Me</a>
                 </div>
             </div>
         </section>
@@ -69,7 +69,7 @@
                     <div class="right-p d-flex flex-column">
                         <h2>IF ELSE 2022 Website</h2>
                         <p>I participated on making website for the new Informatics Engineering Student of Brawijaya University called IF ELSE 2022.</p>
-                        <a class="btn btn-1" href="https://ifelse.ub.ac.id/" target="_blank">View Project</a>
+                        <a class="btn" href="https://ifelse.ub.ac.id/" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="p-container d-flex justify-content-center align-items-center" data-aos="fade-right">
@@ -77,7 +77,7 @@
                     <div class="right-p d-flex flex-column">
                         <h2>Thrifty Website</h2>
                         <p>I created a landing page for Thrift company called thrifty.</p>
-                        <a class="btn btn-1" href="https://eszw10.github.io/Thrifty-Website/" target="_blank">View Project</a>
+                        <a class="btn" href="https://eszw10.github.io/Thrifty-Website/" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="p-container d-flex justify-content-center align-items-center" data-aos="fade-up-left">
@@ -85,7 +85,7 @@
                     <div class="right-p d-flex flex-column">
                         <h2>Odin Landing Page</h2>
                         <p>Landing Page Project from Odin Project</p>
-                        <a class="btn btn-1" href="https://eszw10.github.io/odin-landing-page/" target="_blank">View Project</a>
+                        <a class="btn" href="https://eszw10.github.io/odin-landing-page/" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="p-container d-flex justify-content-center align-items-center" data-aos="fade-down-right">
@@ -93,7 +93,7 @@
                     <div class="right-p d-flex flex-column">
                         <h2>Thrifty Survey Form</h2>
                         <p>I created a survey Form made for thrifty company customer</p>
-                        <a class="btn btn-1" href="https://eszw10.github.io/SurveyForm/" target="_blank">View Project</a>
+                        <a class="btn" href="https://eszw10.github.io/SurveyForm/" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>

@@ -25,8 +25,18 @@ body {
     color: var(--blanco-) !important;
 }
 
+/* navbar */
 .hover-underline-animation {
     position: relative;
+}
+
+.navbar {
+    background-color: var(--bg1-);
+}
+
+.nav-scrolled {
+    box-shadow: var(--primary-) 0px 3px 6px;
+    transition: 0.5s ease-out;
 }
 
 /* dashboard */
@@ -51,7 +61,7 @@ body {
     color: var(--primary-);
 }
 
-#dashboard .btn, #about .btn, #project .btn {
+#dashboard .btn, #about .btn, #project .btn, .btn-1 {
     padding: 16px 20px;
     border-radius: 8px !important;
     text-align: center;
@@ -70,14 +80,16 @@ body {
     gap: 16px;
 }
 
-#dashboard .dash-btn .btn:first-child {
-    background-color: var(--primary-)!important;
+.btn-1 {
+    background-color: var(--primary-);
+    height: 64px;
+    text-decoration: none;
     border: none;
 }
 
-#dashboard .dash-btn .btn:first-child:hover {
-    background-color: var(--hover-)!important;
-
+.btn-1:hover {
+    background-color: var(--hover-);
+    color: var(--blanco-)
 }
 
 /* About */
@@ -133,7 +145,6 @@ body {
 .bigP-container {
     justify-content: center;
     gap: 50px;
-    
 }
 
 .p-container {
@@ -261,6 +272,11 @@ footer ul {
     #dashboard h1 {
         font-size: 2.7rem;
     }
+
+    #about .container {
+        max-width: 500px !important;
+    }
+
     .about-text {
         align-items: center;
     }
@@ -296,3 +312,10 @@ footer ul {
         gap: 40px;
     }
 }
+
+@media only screen and (min-width:992px) {
+    #about .container {
+        max-width: 1200px;
+    }
+}
+
