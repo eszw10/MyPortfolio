@@ -1,5 +1,5 @@
-let name = prompt('Halo! Siapa nama anda? ')
-alert(`Selamat Datang ${name}!`);
+let name = prompt('Hello! What\'s your name? ')
+alert(`Welcome ${name}!`);
 let navbar = document.getElementById("nav");
 let sections = document.querySelectorAll('section')
 window.onscroll = () => {
