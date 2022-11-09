@@ -25,6 +25,26 @@ body {
     color: var(--blanco-) !important;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: auto;
+    border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-);
+    border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 24px;
+}
+
 /* navbar */
 .hover-underline-animation {
     position: relative;
