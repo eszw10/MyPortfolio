@@ -1,2 +1,2 @@
-# gdsc-portfolio
-Personal Portfolio Website for Google Developer Student Club Challenge
+# MyPortfolio
+This is My Personal Portfolio Website
